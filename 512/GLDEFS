@@ -1,0 +1,139 @@
+
+
+/*
+	A material definition looks like this:
+
+	material <flat|texture> <TEXTURENAME>
+	{
+		normal <NORMALMAP>
+		specular <SPECULARMAP>
+		specularlevel <float>
+		glossiness <float>
+		brightmap <BRIGHTMAP>
+		[iwad]
+		[thiswad]
+		[disablefullbright]
+	}
+
+	Or for PBR materials:
+
+	material <flat|texture> <TEXTURENAME>
+	{
+		normal <NORMALMAP>
+		metallic <METALMAP>
+		roughness <ROUGHMAP>
+		ao <AMBIENTOCCLUSIONMAP>
+		brightmap <BRIGHTMAP>
+		[iwad]
+		[thiswad]
+		[disablefullbright]
+	}
+
+*/
+
+
+material texture STARGR1
+{
+	normal "normalmaps/STARGR1.png"
+	metallic "metallic/STARGR1.png"
+	roughness "roughness/STARGR1.png"
+	texture tex_heightmap "heightmaps/STARGR1.png"
+// 	shader "shaders/texture/parallax_2.fp"
+	// texture tex_heightmap "heightmaps/STARGR1.png"
+	// specular "specularmaps/STARGR1.png"
+	// brightmap "brightmaps/A0001001.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/STARGR1.png"
+	// specularlevel 1.0
+	// glossiness 5.0
+// 	define "STARGR1"
+
+}
+
+material texture STARTAN1
+{
+	normal "normalmaps/STARTAN1.png"
+	metallic "metallic/STARTAN1.png"
+	roughness "roughness/STARTAN1.png"
+	texture tex_heightmap "heightmaps/STARGR1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/STARGR1.png"
+
+}
+
+material texture STARG1
+{
+	normal "normalmaps/STARTAN1.png"
+	metallic "metallic/STARTAN1.png"
+	roughness "roughness/STARTAN1.png"
+	texture tex_heightmap "heightmaps/STARGR1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/STARGR1.png"
+
+}
+
+material texture STARG3
+{
+	normal "normalmaps/STARTAN3.png"
+	metallic "metallic/STARTAN3.png"
+	roughness "roughness/STARTAN3.png"
+	texture tex_heightmap "heightmaps/STARTAN3.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "ao/STARTAN3.png"
+
+}
+
+material texture STARTAN3
+{
+	normal "normalmaps/STARTAN3.png"
+	metallic "metallic/STARTAN3.png"
+	roughness "roughness/STARTAN3.png"
+	texture tex_heightmap "heightmaps/STARTAN3.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "ao/STARTAN3.png"
+
+}
+
+material flat FLOOR5_1
+{
+ 	normal "normalmaps/FLOOR5_1.png"
+	metallic "metallic/FLOOR5_1.png"
+	roughness "roughness/FLOOR5_1.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/FLOOR5_1.png"
+
+}
+
+material flat FLOOR5_2
+{
+ 	normal "normalmaps/FLOOR5_3.png"
+	metallic "metallic/FLOOR5_3.png"
+	roughness "roughness/FLOOR5_2.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/FLOOR5_1.png"
+
+}
+
+material flat FLOOR5_3
+{
+ 	normal "normalmaps/FLOOR5_3.png"
+	metallic "metallic/FLOOR5_3.png"
+	roughness "roughness/FLOOR5_3.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/FLOOR5_1.png"
+
+}
+
+material flat FLOOR4_8
+{
+ 	normal "normalmaps/FLOOR4_8.png"
+	metallic "metallic/FLOOR4_8.png"
+	roughness "roughness/FLOOR4_8.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/FLOOR5_1.png"
+
+}
