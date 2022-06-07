@@ -94,6 +94,39 @@ material texture STARTAN3
 
 }
 
+material texture BROWN1
+{
+	normal "normalmaps/BROWN1.png"
+	metallic "specularmaps/grey.png"
+	roughness "roughness/BROWN1.png"
+	texture tex_heightmap "heightmaps/BROWN1.png"
+	shader "shaders/texture/parallax4.fp"
+// 	ao "ao/STARTAN3.png"
+
+}
+
+material texture BROWN96
+{
+	normal "normalmaps/BROWN96.png"
+	metallic "metallic/BROWN96.png"
+	roughness "roughness/BROWN96.png"
+	texture tex_heightmap "heightmaps/BROWN96.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "ao/BROWN96.png"
+
+}
+
+material texture BROWNGRN
+{
+	normal "normalmaps/BROWNGRN.png"
+	metallic "metallic/BROWNGRN.png"
+	roughness "roughness/BROWNGRN.png"
+	texture tex_heightmap "heightmaps/BROWNGRN.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "ao/BROWNGRN.png"
+
+}
+
 material flat FLOOR5_1
 {
  	normal "normalmaps/FLOOR5_1.png"
@@ -107,12 +140,12 @@ material flat FLOOR5_1
 
 material flat FLOOR5_2
 {
- 	normal "normalmaps/FLOOR5_3.png"
-	metallic "metallic/FLOOR5_3.png"
+ 	normal "normalmaps/FLOOR5_2.png"
+	metallic "metallic/FLOOR5_2.png"
 	roughness "roughness/FLOOR5_2.png"
- 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_2.png"
 	shader "shaders/texture/parallax.fp"
-	ao "ao/FLOOR5_1.png"
+	ao "ao/FLOOR5_2.png"
 
 }
 
@@ -130,6 +163,7 @@ material flat FLOOR5_3
 material flat FLOOR4_8
 {
  	normal "normalmaps/FLOOR4_8.png"
+// 	metallic "specularmaps/grey.png"
 	metallic "metallic/FLOOR4_8.png"
 	roughness "roughness/FLOOR4_8.png"
  	texture tex_heightmap "heightmaps/FLOOR5_1.png"
