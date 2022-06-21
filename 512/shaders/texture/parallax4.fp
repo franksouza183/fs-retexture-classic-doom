@@ -65,7 +65,7 @@ vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord)
 vec2 ParallaxMap(mat3 tbn)
 {
     const float parallaxScale = 0.025;
-    const float minLayers = 64.0;
+    const float minLayers = 32.0;
     const float maxLayers = 64.0;
 
     // Calculate fragment view direction in tangent space

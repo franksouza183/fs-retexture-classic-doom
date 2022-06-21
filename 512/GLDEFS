@@ -31,6 +31,17 @@
 
 */
 
+material texture DOORTRAK
+{
+	normal "normalmaps/DOORTRAK.png"
+	metallic "metallic/DOORTRAK.png"
+	roughness "roughness/DOORTRAK.png"
+	texture tex_heightmap "heightmaps/DOORTRAK.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
 
 material texture STARGR1
 {
@@ -97,11 +108,11 @@ material texture STARTAN3
 material texture BROWN1
 {
 	normal "normalmaps/BROWN1.png"
-	metallic "specularmaps/grey.png"
+	metallic "specularmaps/black.png"
 	roughness "roughness/BROWN1.png"
 	texture tex_heightmap "heightmaps/BROWN1.png"
-	shader "shaders/texture/parallax4.fp"
-// 	ao "ao/STARTAN3.png"
+	shader "shaders/texture/parallax.fp"
+	ao "specularmaps/white.png"
 
 }
 
@@ -127,6 +138,128 @@ material texture BROWNGRN
 
 }
 
+material texture BROWNHUG
+{
+	normal "normalmaps/BROWNHUG.png"
+	metallic "metallic/BROWNHUG.png"
+	roughness "roughness/BROWNHUG.png"
+	texture tex_heightmap "specularmaps/black.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "ao/BROWNGRN.png"
+
+}
+
+material flat CEIL3_5
+{
+ 	normal "normalmaps/CEIL3_5.png"
+	metallic "metallic/CEIL3_5.png"
+	roughness "roughness/CEIL3_5.png"
+ 	texture tex_heightmap "heightmaps/CEIL3_5.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/CEIL3_5.png"
+
+}
+
+material flat CEIL3_6
+{
+ 	normal "normalmaps/CEIL3_6.png"
+	metallic "metallic/CEIL3_6.png"
+	roughness "roughness/CEIL3_6.png"
+//  	texture tex_heightmap "heightmaps/CEIL3_5.png"
+// 	shader "shaders/texture/parallax.fp"
+	ao "ao/CEIL3_5.png"
+}
+
+material texture CEIL5_2
+{
+	normal "normalmaps/CEIL5_2.png"
+	metallic "metallic/CEIL5_2.png"
+	roughness "roughness/CEIL5_2.png"
+	texture tex_heightmap "specularmaps/black.png"
+	shader "shaders/texture/parallax4.fp"
+	ao "normalmaps/black.png"
+
+}
+
+material texture STONE2
+{
+	normal "normalmaps/STONE2.png"
+	metallic "metallic/STONE2.png"
+	roughness "roughness/STONE2.png"
+	texture tex_heightmap "heightmaps/STONE2.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "ao/STONE2.png"
+
+}
+
+material texture STONE3
+{
+	normal "normalmaps/STONE3.png"
+	metallic "metallic/STONE3.png"
+	roughness "roughness/STONE3.png"
+	texture tex_heightmap "heightmaps/STONE3.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "ao/STONE3.png"
+
+}
+
+material texture COMPSPAN
+{
+	normal "normalmaps/COMPSPAN.png"
+	metallic "metallic/COMPSPAN.png"
+	roughness "roughness/COMPSPAN.png"
+	texture tex_heightmap "heightmaps/COMPSPAN.png"
+	shader "shaders/texture/parallax3.fp"
+// 	ao "ao/STONE3.png"
+
+}
+
+material texture SUPPORT2
+{
+	normal "normalmaps/SUPPORT2.png"
+	metallic "metallic/SUPPORT2.png"
+	roughness "roughness/SUPPORT2.png"
+	texture tex_heightmap "heightmaps/SUPPORT2.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/black.png"
+
+}
+
+material texture DOORSTOP
+{
+	normal "normalmaps/DOORSTOP.png"
+	metallic "metallic/DOORSTOP.png"
+	roughness "roughness/DOORSTOP.png"
+	texture tex_heightmap "heightmaps/DOORSTOP.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
+material texture SHAWN2
+{
+	normal "normalmaps/SHAWN2.png"
+	metallic "metallic/SHAWN2.png"
+	roughness "roughness/SHAWN2.png"
+	texture tex_heightmap "specularmaps/black.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
+material texture STEP6
+{
+ 	normal "normalmaps/STEP6.png"
+	metallic "metallic/STEP6.png"
+	roughness "roughness/STEP6.png"
+// 	metallic "specularmaps/black.png"
+// 	roughness "specularmaps/grey.png"
+ 	texture tex_heightmap "heightmaps/STEP6.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
 material flat FLOOR5_1
 {
  	normal "normalmaps/FLOOR5_1.png"
@@ -145,7 +278,7 @@ material flat FLOOR5_2
 	roughness "roughness/FLOOR5_2.png"
  	texture tex_heightmap "heightmaps/FLOOR5_2.png"
 	shader "shaders/texture/parallax.fp"
-	ao "ao/FLOOR5_2.png"
+	ao "ao/FLOOR5_1.png"
 
 }
 
@@ -163,11 +296,35 @@ material flat FLOOR5_3
 material flat FLOOR4_8
 {
  	normal "normalmaps/FLOOR4_8.png"
-// 	metallic "specularmaps/grey.png"
+// 	metallic "specularmaps/black.png"
 	metallic "metallic/FLOOR4_8.png"
 	roughness "roughness/FLOOR4_8.png"
  	texture tex_heightmap "heightmaps/FLOOR5_1.png"
 	shader "shaders/texture/parallax.fp"
 	ao "ao/FLOOR5_1.png"
+
+}
+
+material texture FLOOR4_8
+{
+ 	normal "normalmaps/FLOOR4_8.png"
+// 	metallic "specularmaps/black.png"
+	metallic "metallic/FLOOR4_8.png"
+	roughness "roughness/FLOOR4_8.png"
+ 	texture tex_heightmap "heightmaps/FLOOR5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/FLOOR5_1.png"
+
+}
+
+material texture FLAT14
+{
+ 	normal "normalmaps/FLAT14.png"
+// 	metallic "specularmaps/black.png"
+	metallic "metallic/FLAT14.png"
+	roughness "roughness/FLAT14.png"
+ 	texture tex_heightmap "heightmaps/FLAT14.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
 
 }
