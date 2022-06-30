@@ -64,7 +64,7 @@ vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord)
 
 vec2 ParallaxMap(mat3 tbn)
 {
-    const float parallaxScale = 0.10;
+    const float parallaxScale = 0.050;
     const float minLayers = 32.0;
     const float maxLayers = 64.0;
 

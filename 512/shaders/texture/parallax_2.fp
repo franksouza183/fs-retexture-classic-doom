@@ -1,3 +1,7 @@
+
+#define NORMAL_PARALLAX
+// #define STEEP_PARALLAX
+
 mat3 GetTBN();
 vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord);
 vec2 ParallaxMap(mat3 tbn);
@@ -55,18 +59,37 @@ vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord)
 #if defined(NORMALMAP)
     vec3 map = texture(normaltexture, texcoord).xyz;
     map = map * 255./127. - 128./127.; // Math so "odd" because 0.5 cannot be precisely described in an unsigned format
-    map.y = -map.y;
+    map.xy *= vec2(0.5, -0.5); // Make normal map less strong and flip Y
     return normalize(tbn * map);
 #else
     return normalize(vWorldNormal.xyz);
 #endif
 }
 
+float GetDisplacementAt(vec2 currentTexCoords)
+{
+    return 0.5 - texture(displacement, currentTexCoords).r;
+}
+
+#if defined(NORMAL_PARALLAX)
 vec2 ParallaxMap(mat3 tbn)
 {
-    const float parallaxScale = 0.20;
+    const float parallaxScale = 0.15;
+
+    // Calculate fragment view direction in tangent space
+    mat3 invTBN = transpose(tbn);
+    vec3 V = normalize(invTBN * (uCameraPos.xyz - pixelpos.xyz));
+
+    vec2 texCoords = vTexCoord.st;
+    vec2 p = V.xy / abs(V.z) * GetDisplacementAt(texCoords) * parallaxScale;
+    return texCoords - p;
+}
+#elif defined(STEEP_PARALLAX)
+vec2 ParallaxMap(mat3 tbn)
+{
+    const float parallaxScale = 0.2;
     const float minLayers = 8.0;
-    const float maxLayers = 36.0;
+    const float maxLayers = 16.0;
 
     // Calculate fragment view direction in tangent space
     mat3 invTBN = transpose(tbn);
@@ -85,7 +108,7 @@ vec2 ParallaxMap(mat3 tbn)
     vec2 P = V.xy * parallaxScale;
     vec2 deltaTexCoords = P / numLayers;
     vec2 currentTexCoords = T;
-    float currentDepthMapValue = texture(tex_heightmap, currentTexCoords).r;
+    float currentDepthMapValue = GetDisplacementAt(currentTexCoords);
 
     while (currentLayerDepth < currentDepthMapValue)
     {
@@ -93,7 +116,7 @@ vec2 ParallaxMap(mat3 tbn)
         currentTexCoords -= deltaTexCoords;
 
         // get depthmap value at current texture coordinates
-        currentDepthMapValue = texture(tex_heightmap, currentTexCoords).r;
+        currentDepthMapValue = GetDisplacementAt(currentTexCoords);
 
         // get depth of next layer
         currentLayerDepth += layerDepth;
@@ -104,11 +127,12 @@ vec2 ParallaxMap(mat3 tbn)
 
     // get depth after and before collision for linear interpolation
     float afterDepth  = currentDepthMapValue - currentLayerDepth;
-    float beforeDepth = texture(tex_heightmap, prevTexCoords).r - currentLayerDepth + layerDepth;
-     
+    float beforeDepth = GetDisplacementAt(prevTexCoords) - currentLayerDepth + layerDepth;
+
     // interpolation of texture coordinates
     float weight = afterDepth / (afterDepth - beforeDepth);
     vec2 finalTexCoords = prevTexCoords * weight + currentTexCoords * (1.0 - weight);
 
     return finalTexCoords;
 }
+#endif

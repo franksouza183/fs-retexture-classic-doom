@@ -304,6 +304,17 @@ material flat FLOOR5_3
 
 }
 
+material flat FLOOR6_2
+{
+ 	normal "normalmaps/FLOOR6_2.png"
+	metallic "metallic/FLOOR6_2.png"
+	roughness "roughness/FLOOR6_2.png"
+ 	texture tex_heightmap "heightmaps/FLOOR6_2.png"
+	shader "shaders/texture/parallax_0.5.fp"
+	ao "ao/FLOOR6_2.png"
+
+}
+
 material flat FLOOR4_8
 {
  	normal "normalmaps/FLOOR4_8.png"
