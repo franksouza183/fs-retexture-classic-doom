@@ -138,6 +138,17 @@ material texture BROWNGRN
 
 }
 
+material texture METAL
+{
+	normal "normalmaps/METAL.png"
+	metallic "metallic/METAL.png"
+	roughness "roughness/METAL.png"
+	texture tex_heightmap "heightmaps/METAL.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "ao/METAL.png"
+
+}
+
 material texture BROWNHUG
 {
 	normal "normalmaps/BROWNHUG.png"
