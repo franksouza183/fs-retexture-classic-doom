@@ -181,6 +181,17 @@ material texture CEIL5_2
 
 }
 
+material texture GSTONE1
+{
+	normal "normalmaps/GSTONE1.png"
+	metallic "metallic/GSTONE1.png"
+	roughness "roughness/GSTONE1.png"
+	texture tex_heightmap "heightmaps/GSTONE1.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
 material texture STONE2
 {
 	normal "normalmaps/STONE2.png"
