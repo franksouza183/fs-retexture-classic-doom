@@ -116,6 +116,17 @@ material texture BROWN1
 
 }
 
+material texture FLOOR7_1
+{
+	normal "normalmaps/FLOOR7_1.png"
+	metallic "specularmaps/black.png"
+	roughness "roughness/FLOOR7_1.png"
+	texture tex_heightmap "specularmaps/black.png"
+	shader "shaders/texture/parallax.fp"
+	ao "specularmaps/white.png"
+
+}
+
 material texture BROWN96
 {
 	normal "normalmaps/BROWN96.png"

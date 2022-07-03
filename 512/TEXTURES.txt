@@ -1,4 +1,12 @@
 
+Texture FLOOR7_1, 512, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch FLOOR7_1, 0, 0
+}
+
 Texture BROWN1, 512, 512
 {
    XScale 4.00
