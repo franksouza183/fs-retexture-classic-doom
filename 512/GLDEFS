@@ -251,6 +251,18 @@ material flat CEIL5_2
 
 }
 
+material flat TLITE6_4
+{
+	normal "normalmaps/TLITE6_4.png"
+	metallic "metallic/TLITE6_4.png"
+	roughness "roughness/TLITE6_4.png"
+	brightmap "brightmaps/TLITE6_1.png"
+	texture tex_heightmap "heightmaps/TLITE6_4.png"
+	shader "shaders/texture/parallax.fp"
+	ao "specularmaps/white.png"
+
+}
+
 material flat CEIL5_1
 {
 	normal "normalmaps/CEIL5_1.png"

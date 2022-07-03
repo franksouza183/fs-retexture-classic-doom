@@ -108,3 +108,10 @@ Texture TLITE6_1, 256, 256
    YScale 4.00
    Patch TLITE6_1, 0, 0
 }
+
+Texture TLITE6_4, 256, 256
+{
+   XScale 4.00
+   YScale 4.00
+   Patch TLITE6_4, 0, 0
+}
