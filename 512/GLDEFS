@@ -116,6 +116,17 @@ material texture BROWN1
 
 }
 
+material texture SLADWALL
+{
+	normal "normalmaps/SLADWALL.png"
+	metallic "metallic/SLADWALL.png"
+	roughness "roughness/SLADWALL.png"
+	texture tex_heightmap "heightmaps/SLADWALL.png"
+	shader "shaders/texture/parallax.fp"
+	ao "ao/SLADWALL.png"
+
+}
+
 material texture FLOOR7_1
 {
 	normal "normalmaps/FLOOR7_1.png"
