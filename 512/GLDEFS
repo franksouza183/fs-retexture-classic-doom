@@ -291,7 +291,7 @@ material texture COMPSPAN
 	roughness "roughness/COMPSPAN.png"
 	texture tex_heightmap "heightmaps/COMPSPAN.png"
 	shader "shaders/texture/parallax3.fp"
-// 	ao "ao/STONE3.png"
+	ao "specularmaps/white.png"
 
 }
 
