@@ -22,6 +22,13 @@ Texture CEIL5_1, 256, 256
    Patch CEIL5_1, 0, 0
 }
 
+Texture CEIL5_2, 256, 256
+{
+   XScale 4.00
+   YScale 4.00
+   Patch CEIL5_2, 0, 0
+}
+
 Texture COMPSPAN, 128, 512
 {
    XScale 4.00
