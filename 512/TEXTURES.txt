@@ -15,6 +15,30 @@ Texture BROWN1, 512, 512
    Patch BROWN1, 0, 0
 }
 
+Texture METAL, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch METAL, 0, 0
+}
+
+Texture METAL2, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch METAL2, 0, 0
+}
+
+Texture METAL5, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch METAL5, 0, 0
+}
+
 Texture SLADWALL, 256, 512
 {
    XScale 4.00

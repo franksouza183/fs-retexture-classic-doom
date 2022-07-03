@@ -167,7 +167,32 @@ material texture METAL
 	roughness "roughness/METAL.png"
 	texture tex_heightmap "heightmaps/METAL.png"
 	shader "shaders/texture/parallax3.fp"
-	ao "ao/METAL.png"
+// 	ao "ao/METAL.png"
+	ao "specularmaps/white.png"
+
+}
+
+material texture METAL2
+{
+	normal "normalmaps/METAL2.png"
+	metallic "metallic/METAL2.png"
+	roughness "roughness/METAL2.png"
+	texture tex_heightmap "heightmaps/METAL2.png"
+	shader "shaders/texture/parallax.fp"
+// 	ao "ao/SUPPORT3.png"
+	ao "specularmaps/white.png"
+
+}
+
+material texture METAL5
+{
+	normal "normalmaps/METAL5.png"
+	metallic "metallic/METAL5.png"
+	roughness "roughness/METAL5.png"
+	texture tex_heightmap "heightmaps/METAL5.png"
+	shader "shaders/texture/parallax.fp"
+// 	ao "ao/SUPPORT3.png"
+	ao "specularmaps/white.png"
 
 }
 
