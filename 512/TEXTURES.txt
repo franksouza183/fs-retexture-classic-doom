@@ -1,5 +1,5 @@
 
-Texture FLOOR7_1, 256, 256
+Flat FLOOR7_1, 256, 256
 {
    XScale 4.00
    YScale 4.00
@@ -15,14 +15,22 @@ Texture BROWN1, 512, 512
    Patch BROWN1, 0, 0
 }
 
-Texture CEIL5_1, 256, 256
+Flat CEIL3_5, 256, 256
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch CEIL3_5, 0, 0
+}
+
+Flat CEIL5_1, 256, 256
 {
    XScale 4.00
    YScale 4.00
    Patch CEIL5_1, 0, 0
 }
 
-Texture CEIL5_2, 256, 256
+Flat CEIL5_2, 256, 256
 {
    XScale 4.00
    YScale 4.00
@@ -109,14 +117,14 @@ Texture SUPPORT3, 256, 512
    Patch SUPPORT3, 0, 0
 }
 
-Texture TLITE6_1, 256, 256
+Flat TLITE6_1, 256, 256
 {
    XScale 4.00
    YScale 4.00
    Patch TLITE6_1, 0, 0
 }
 
-Texture TLITE6_4, 256, 256
+Flat TLITE6_4, 256, 256
 {
    XScale 4.00
    YScale 4.00
