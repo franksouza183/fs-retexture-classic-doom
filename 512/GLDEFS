@@ -76,7 +76,7 @@ material texture STARG1
 {
 	normal "normalmaps/STARTAN1.png"
 	metallic "metallic/STARTAN1.png"
-	roughness "roughness/STARTAN1.png"
+	roughness "roughness/STARG1.png"
 	texture tex_heightmap "heightmaps/STARGR1.png"
 	shader "shaders/texture/parallax.fp"
 	ao "ao/STARGR1.png"

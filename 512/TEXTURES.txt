@@ -14,3 +14,11 @@ Texture BROWN1, 512, 512
    Offset 0, 0
    Patch BROWN1, 0, 0
 }
+
+Texture STARG1, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STARG1, 0, 0
+}
