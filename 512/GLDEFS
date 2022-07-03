@@ -87,7 +87,7 @@ material texture STARG3
 {
 	normal "normalmaps/STARTAN3.png"
 	metallic "metallic/STARTAN3.png"
-	roughness "roughness/STARTAN3.png"
+	roughness "roughness/STARG3.png"
 	texture tex_heightmap "heightmaps/STARTAN3.png"
 	shader "shaders/texture/parallax4.fp"
 	ao "ao/STARTAN3.png"
