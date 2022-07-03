@@ -62,3 +62,11 @@ Texture STARG3, 512, 512
    Offset 0, 0
    Patch STARG3, 0, 0
 }
+
+Texture SUPPORT3, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch SUPPORT3, 0, 0
+}

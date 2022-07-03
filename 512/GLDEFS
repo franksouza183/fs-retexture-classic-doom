@@ -196,6 +196,18 @@ material texture METAL5
 
 }
 
+material texture SUPPORT3
+{
+	normal "normalmaps/SUPPORT3.png"
+	metallic "metallic/SUPPORT3.png"
+	roughness "roughness/SUPPORT3.png"
+	texture tex_heightmap "heightmaps/SUPPORT3.png"
+	shader "shaders/texture/parallax3.fp"
+// 	ao "ao/SUPPORT3.png"
+	ao "specularmaps/white.png"
+
+}
+
 material texture BROWNHUG
 {
 	normal "normalmaps/BROWNHUG.png"
