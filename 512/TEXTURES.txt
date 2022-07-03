@@ -15,6 +15,14 @@ Texture BROWN1, 512, 512
    Patch BROWN1, 0, 0
 }
 
+Texture CEIL5_1, 512, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch CEIL5_1, 0, 0
+}
+
 Texture COMPSPAN, 128, 512
 {
    XScale 4.00
@@ -69,6 +77,22 @@ Texture STARG3, 512, 512
    YScale 4.00
    Offset 0, 0
    Patch STARG3, 0, 0
+}
+
+Texture STARTAN1, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STARTAN1, 0, 0
+}
+
+Texture STARTAN3, 512, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STARTAN1, 0, 0
 }
 
 Texture SUPPORT3, 256, 512

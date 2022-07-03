@@ -240,14 +240,25 @@ material flat CEIL3_6
 	ao "ao/CEIL3_5.png"
 }
 
-material texture CEIL5_2
+material flat CEIL5_2
 {
 	normal "normalmaps/CEIL5_2.png"
 	metallic "metallic/CEIL5_2.png"
 	roughness "roughness/CEIL5_2.png"
 	texture tex_heightmap "specularmaps/black.png"
-	shader "shaders/texture/parallax4.fp"
-	ao "normalmaps/black.png"
+	shader "shaders/texture/parallax.fp"
+	ao "specularmaps/white.png"
+
+}
+
+material flat CEIL5_1
+{
+	normal "normalmaps/CEIL5_1.png"
+	metallic "metallic/CEIL5_1.png"
+	roughness "roughness/CEIL5_1.png"
+	texture tex_heightmap "heightmaps/CEIL5_1.png"
+	shader "shaders/texture/parallax.fp"
+	ao "specularmaps/white.png"
 
 }
 
