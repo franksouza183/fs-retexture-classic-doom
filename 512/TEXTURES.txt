@@ -130,7 +130,23 @@ Texture STARTAN3, 512, 512
    XScale 4.00
    YScale 4.00
    Offset 0, 0
-   Patch STARTAN1, 0, 0
+   Patch STARTAN3, 0, 0
+}
+
+Texture STONE2, 512, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STONE2, 0, 0
+}
+
+Texture STONE3, 512, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STONE3, 0, 0
 }
 
 Texture SUPPORT3, 256, 512
