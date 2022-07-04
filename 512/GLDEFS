@@ -305,7 +305,7 @@ material texture STONE2
 	roughness "roughness/STONE2.png"
 	texture tex_heightmap "heightmaps/STONE2.png"
 	shader "shaders/texture/parallax3.fp"
-	ao "ao/STONE2.png"
+	ao "specularmaps/white.png"
 
 }
 
@@ -316,7 +316,7 @@ material texture STONE3
 	roughness "roughness/STONE3.png"
 	texture tex_heightmap "heightmaps/STONE3.png"
 	shader "shaders/texture/parallax3.fp"
-	ao "ao/STONE3.png"
+	ao "specularmaps/white.png"
 
 }
 
