@@ -235,8 +235,9 @@ material flat CEIL3_6
  	normal "normalmaps/CEIL3_6.png"
 	metallic "metallic/CEIL3_6.png"
 	roughness "roughness/CEIL3_6.png"
-//  	texture tex_heightmap "heightmaps/CEIL3_5.png"
-// 	shader "shaders/texture/parallax.fp"
+	brightmap "brightmaps/CEIL3_6.png"
+ 	texture tex_heightmap "heightmaps/CEIL3_6.png"
+	shader "shaders/texture/parallax.fp"
 	ao "ao/CEIL3_5.png"
 }
 

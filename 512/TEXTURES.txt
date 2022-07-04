@@ -23,6 +23,14 @@ Flat CEIL3_5, 256, 256
    Patch CEIL3_5, 0, 0
 }
 
+Flat CEIL3_6, 256, 256
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch CEIL3_6, 0, 0
+}
+
 Flat CEIL5_1, 256, 256
 {
    XScale 4.00
@@ -43,6 +51,14 @@ Texture COMPSPAN, 128, 512
    YScale 4.00
    Offset 0, 0
    Patch COMPSPAN, 0, 0
+}
+
+Texture GSTONE1, 1024, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch GSTONE1, 0, 0
 }
 
 Texture METAL, 256, 512
