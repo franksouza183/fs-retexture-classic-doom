@@ -15,6 +15,14 @@ Texture BROWN1, 512, 512
    Patch BROWN1, 0, 0
 }
 
+Texture BROWNGRN, 256, 512
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch BROWNGRN, 0, 0
+}
+
 Flat CEIL3_5, 256, 256
 {
    XScale 4.00

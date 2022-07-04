@@ -155,7 +155,7 @@ material texture BROWNGRN
 	metallic "metallic/BROWNGRN.png"
 	roughness "roughness/BROWNGRN.png"
 	texture tex_heightmap "heightmaps/BROWNGRN.png"
-	shader "shaders/texture/parallax4.fp"
+	shader "shaders/texture/parallax.fp"
 	ao "ao/BROWNGRN.png"
 
 }
