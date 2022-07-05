@@ -141,6 +141,14 @@ Flat STEP1, 256, 256
    Patch STEP1F, 0, 0
 }
 
+Flat STEP2, 256, 256
+{
+   XScale 4.00
+   YScale 4.00
+   Offset 0, 0
+   Patch STEP2, 0, 0
+}
+
 Texture STONE2, 512, 512
 {
    XScale 4.00

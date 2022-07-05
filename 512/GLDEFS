@@ -322,17 +322,6 @@ material texture GSTONE1
 
 }
 
-material flat STEP1
-{
- 	normal "normalmaps/STEP1F.png"
-	metallic "metallic/STEP1F.png"
-	roughness "roughness/STEP1F.png"
- 	texture tex_heightmap "heightmaps/STEP1F.png"
-	shader "shaders/texture/parallax3.fp"
-	ao "specularmaps/white.png"
-
-}
-
 material texture STONE2
 {
 	normal "normalmaps/STONE2.png"
@@ -487,6 +476,29 @@ material texture FLAT14
 	metallic "metallic/FLAT14.png"
 	roughness "roughness/FLAT14.png"
  	texture tex_heightmap "heightmaps/FLAT14.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
+material flat STEP1
+{
+ 	normal "normalmaps/STEP1F.png"
+	metallic "metallic/STEP1F.png"
+	roughness "roughness/STEP1F.png"
+ 	texture tex_heightmap "heightmaps/STEP1F.png"
+	shader "shaders/texture/parallax3.fp"
+	ao "specularmaps/white.png"
+
+}
+
+material flat STEP2
+{
+ 	normal "normalmaps/STEP2.png"
+// 	metallic "specularmaps/black.png"
+	metallic "metallic/STEP2.png"
+	roughness "roughness/STEP2.png"
+ 	texture tex_heightmap "heightmaps/STEP2.png"
 	shader "shaders/texture/parallax3.fp"
 	ao "specularmaps/white.png"
 
