@@ -38,7 +38,7 @@
 *Tested only on GZDoom*
 <br>
 
-*Dynamic lights needs to be on, also, the maps you play need have dynamic lights. You can, also, use the [Relighting doom mod](https://forum.zdoom.org/viewtopic.php?t=74412)*
+*The dynamic lights need to be on, as well as the maps you play need to have dynamic lights, you can also use the [Relighting doom mod](https://forum.zdoom.org/viewtopic.php?t=74412)*
 <br>
 
 
