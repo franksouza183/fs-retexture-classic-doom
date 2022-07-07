@@ -6,7 +6,7 @@
 <br>
 
 <details>
-<summary>Spoiler warning</summary>
+<summary>Screenshots</summary>
 
 <div align = center>
 
