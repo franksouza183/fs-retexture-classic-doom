@@ -5,6 +5,27 @@
 
 <br>
 
+<details>
+<summary>Spoiler warning</summary>
+
+<div align = center>
+
+![print1]
+
+<br>
+
+![print2]
+
+<br>
+
+![print3]
+
+<br>
+
+</div>
+
+</details>
+
 *Tested only on GZDoom*
 <br>
 
@@ -28,3 +49,6 @@
 <!-------------------------------[ Badges ]------------------------------------>
 
 [Badge License]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
+[print1]: Resources/Screenshots/doom22.jpg 'Screenshot 1'
+[print2]: Resources/Screenshots/doom7.jpg 'Screenshot 2'
+[print3]: Resources/Screenshots/doom24.jpg 'Screenshot 3'
